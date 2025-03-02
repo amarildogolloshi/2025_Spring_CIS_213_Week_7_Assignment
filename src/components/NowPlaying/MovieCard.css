@@ -1,0 +1,62 @@
+.movie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1a1a1a;
+    color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    overflow: hidden;
+    width: 14rem; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie .poster img {
+    width: 100%;
+    border-bottom: 2px solid #e50914;
+}
+
+.movie .vote-average-release-date-title{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem;
+}
+.movie .vote-average-release-date-title .vote-average-release-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.7rem;
+    color: #ccc; 
+}
+
+.movie .vote-average-release-date-title .vote-average-release-date .vote-average {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+
+.movie .vote-average-release-date-title .vote-average-release-date .vote-average .star {
+    color:#ffc107;
+}
+
+
+.movie .vote-average-release-date-title .title p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.movie .vote-average-release-date-title .title p:hover {
+    color: #e50914;
+    transition: color 0.3s;
+}
